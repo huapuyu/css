@@ -1,0 +1,411 @@
+<html>
+	<head>
+		<title>demo2</title>
+		<style type="text/css"><!--
+			body
+			{
+				text-align:center;
+				margin:0;
+			}
+			
+			#container
+			{
+				width:800px;
+				height:1000px;
+				background-color:yellow;
+				margin:0 auto;
+			}
+			
+			#header 
+			{
+				float:left;
+				width:800px;
+				height:100px;
+				margin:0;
+				clear:both;
+				background-color:red;
+			}
+			
+			#logo
+			{
+				float:left;
+				width:250px;
+				height:90px;
+				background-color:green;
+				clear:left;
+				margin:0;
+			}
+			
+			#banner
+			{
+				float:right;
+				width:540px;
+				height:90px;
+				background-color:green;
+				clear:right;
+				margin:0;
+			}
+			
+			#menu 
+			{
+	   			width:800px;
+	    		height:35px;
+	    		margin:0;
+	  			clear:both;
+				background-color:green;
+				float:left;
+			}
+			
+			#menu ul
+			{
+				float:left;
+				list-style:none;
+				margin:0;
+				
+			}
+			
+			#menu ul li
+			{
+				float:left;
+				display:block;
+				line-height:35px;
+				margin:0 10px;
+			}
+			
+			.menuDiv
+			{
+				width:1px;
+				height:35px;
+				background-color:yellow;
+			}
+			
+			#menu ul li a:link, #menu ul li a:visited
+			{
+				font-weight:bolder;
+				color:yellow;
+			}
+			
+			.nav
+			{
+				width:800px;
+				height:20px;
+				clear:both;
+				background-color:white;
+				margin:0;
+				line-height:20px;
+			}
+			
+			.left_main
+			{
+				float:left;
+				width:610px;
+				height:420px;
+				background-color:red;
+				clear:left;
+				margin:0;
+			}
+			
+			.right_main
+			{
+				float:right;
+				width:150px;
+				height:420px;
+				background-color:red;
+				clear:right;
+				margin:0;
+			}
+			
+			.left_1
+			{
+				margin:0;
+				float:left;
+				width:300px;
+				height:205px;
+				background-color:blue;
+				clear:left;
+			}
+			
+			.tab11
+			{
+				float:left;
+				clear:both;
+			}
+			
+			.tab11 h3
+			{
+				float:left;
+				width:300px;
+				height:20px;
+				line-height:20px;
+				margin:0;
+				font-size:12px;
+				text-align:left;
+				color:yellow;
+				padding-left:10px;
+				clear:both;
+			}
+			
+			.tab12
+			{
+				float:left;
+				width:250px;
+				height:180px;
+				border:dotted red;
+				border-width:0 2px;
+				background-color:gray;
+			}
+			
+			.tab12 ul
+			{
+				margin:4px 0;
+				list-style:none;
+				padding:0;
+			}
+			
+			.tab12 ul li
+			{
+				float:left;
+				width:50%;
+			}
+			
+			.tab12 ul li a
+			{
+				display:block;
+				width:84%;
+				height:25px;
+				line-height:25px;
+				margin-left:8%;
+				font-size:12px;
+				text-decoration:none;
+				color:#333;
+			}
+			
+			.left_2
+			{
+				margin:0;
+				float:left;
+				width:300px;
+				height:205px;
+				background-color:green;
+				clear:left;
+			}
+			
+			.right_1
+			{
+				margin:0;
+				float:right;
+				width:300px;
+				height:205px;
+				background-color:green;
+				clear:right;
+			}
+			
+			.right_2
+			{
+				margin:0;
+				float:right;
+				width:300px;
+				height:205px;
+				background-color:blue;
+				clear:right;
+			}
+			
+			.left_main_nav
+			{
+				width:610px;
+				height:10px;
+				clear:both;
+				background-color:white;
+				margin:0;
+				line-height:10px;
+			}
+			
+			.one
+			{
+				float:left;
+				width:190px;
+				height:200px;
+				background-color:red;
+				clear:left;
+			}
+			
+			.two
+			{
+				float:left;
+				width:190px;
+				height:200px;
+				background-color:red;
+				margin-left:10px;
+			}
+			
+			.three
+			{
+				float:left;
+				width:190px;
+				height:200px;
+				background-color:red;
+				margin-left:20px;
+			}
+			
+			.four
+			{
+				float:right;
+				width:190px;
+				height:200px;
+				background-color:red;
+				clear:right;
+			}
+			
+			#footer
+			{
+				width:800px;
+				height:100px;
+				background-color:blue;
+				margin:0;
+				clear:both;
+			}
+			
+			#tab
+			{
+				width:610px;
+				height:205px;
+				position:relative;
+				float:left;
+				margin:0;
+				background-color:green;
+			}
+			
+			#tab h3
+			{
+				float:left;
+				width:122px;
+				height:26px;
+				line-height:26px;
+				margin:0;
+				font-size:12px;
+				cursor:pointer;
+				text-align:center;
+				background-color:red;
+			}
+			
+			#tab div
+			{
+				display:none;
+			}
+			
+			#tab div
+			{
+				top:26px;
+				width:610px;
+				left:0;
+				height:179px;
+			}
+			
+			#tab .block
+			{
+				display:block;
+			}
+			
+			#tab .up
+			{
+				background-color:blue;
+			}
+		--></style>
+	</head>
+	<body>
+		注意：container样式中必须加入margin:0 auto，使margin-left:auto，margin-right:auto，否则container在firefox中无法居中
+		<div id="container">
+			<div id="header">
+				<div id="logo">logo</div>
+				<div id="banner">banner</div>
+			</div>
+			
+			<div id="menu">
+				<ul>
+					<li><a href="#">网站首页</a></li>
+					<li class="menuDiv"></li>
+					<li><a href="#">关于我们</a></li>
+					<li class="menuDiv"></li>
+				</ul>
+			</div>
+			
+			<div class="nav">nav，如果nav的样式中加入float:left，则在ie中right_main会错位</div>
+			
+			<div class="left_main">
+				<div class="left_1">
+					<div class="tab11">
+						<h3>第一个栏目</h3>
+					</div>
+					
+					<div class="tab12">
+						<ul>
+							<li><a href="#">百度</a></li>
+							<li><a href="#">百度</a></li>
+							<li><a href="#">百度</a></li>
+							<li><a href="#">百度</a></li>
+						</ul>
+					</div>
+					
+					<div>
+						
+					</div>	
+				</div>
+				
+				<div class="right_1"></div>
+				<div class="left_main_nav">left_main_nav中如果不放文字的话，ie中高度会有问题</div>
+				<!--<div class="left_2"></div>
+				<div class="right_2"></div>-->
+				
+				<div id="tab">
+					<h3 class="up" onclick="go_to(1);">One</h3>
+					<h3 onclick="go_to(2);">Two</h3>
+					<h3 onclick="go_to(3);">Three</h3>
+					<h3 onclick="go_to(4);">Four</h3>
+					<h3 onclick="go_to(5);">Five</h3>
+					<div class="block">this is one tab</div>
+					<div>this is two tab</div>
+					<div>this is three tab</div>
+					<div>this is four tab</div>
+					<div>this is five tab</div>
+				</div>
+			</div>
+			
+			<div class="right_main">right main</div>
+			
+			<div class="nav">nav</div>
+			
+			<div class="one">one</div>
+			<div class="two">two</div>
+			<div class="three">three</div>
+			<div class="four">four</div>
+			
+			<div class="nav">nav</div>
+			
+			<div id="footer">footer</div>
+		</div>
+	</body>
+</html>
+<script language="JavaScript" type="text/javascript">
+		<!--
+			var hs = document.getElementById("tab").getElementsByTagName("h3");
+			var ds = document.getElementById("tab").getElementsByTagName("div");
+			
+			function go_to(value)
+			{
+				 for (var i = 0; i < hs.length; i++)
+				 {
+				 	//alert(ds[i].className + "  " + hs[i].className);
+					if (value - 1 == i)
+					{
+						ds[i].className += " block";
+						hs[i].className += " up";
+					}
+					else
+					{
+						ds[i].className = " ";
+						hs[i].className = " ";
+					}
+				 }
+			}
+		//-->	
+		</script>

@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<title>position</title>
+		<style type="text/css">
+			#static{
+				position:static;
+				width:100px;
+				height:100px;
+				left:100px;
+				top:100px;
+				background-color:red;
+			}
+			
+			#absolute{
+				position:absolute;
+				width:100px;
+				height:100px;
+				left:200px;
+				top:200px;
+				background-color:yellow;
+			}
+			
+			#relative{
+				position:relative;
+				width:100px;
+				height:100px;
+				left:200px;
+				top:200px;
+				background-color:blue;
+			}
+			
+			#fixed{
+				position:fixed;
+				width:100px;
+				height:100px;
+				left:200px;
+				top:200px;
+				background-color:green;
+			}
+		</style>
+	</head>
+	<body>
+		<span>hello world</span>
+		<span id="static">无特殊定位，对象遵循HTML定位规则</span>
+		<div style="background-color:gray; height:500px;">
+			<span id="absolute">绝对定位</span>
+			<span id="relative">相对定位</span>
+		</div>
+		<span id="fixed">不顶用吗</span>
+	</body>
+</html>

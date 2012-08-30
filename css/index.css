@@ -1,0 +1,162 @@
+/*
+1 对所有h1标签起作用
+*/
+h1
+{
+	font-family:"Courier New";	
+	background-color:yellow;
+}
+
+/*
+2 对所有h2且class="class1"的标签起作用
+*/
+h2.class1
+{
+	font-family:"Courier New";	
+	background-color:yellow;
+}
+
+/*
+对所有class="class2"的标签起作用
+*/
+.class2
+{
+	font-style:italic;
+	font-family:"Courier New";	
+	background-color:yellow;
+}
+
+/*
+3 对id="id1"的标签起作用
+*/
+#id1
+{
+	font-style:italic;
+	font-family:"Courier New";	
+	background-color:blue;
+}
+
+/*
+对id="id2"的标签中的div标签起作用
+*/
+#id2 div
+{
+	font-style:italic;
+	font-family:"Courier New";	
+	background-color:blue;
+}
+
+/*
+4 对center标签中的p标签起作用
+*/
+center p
+{
+	font-style:italic;
+	font-family:"Courier New";	
+	background-color:red;
+}
+
+/*
+5 对所有big和em标签起作用
+*/
+big, em
+{
+	font-family:"Courier New";	
+	background-color:green;
+}
+
+/*
+6 对a标签的visited属性起作用
+*/
+a:visited
+{
+	font-family:"Courier New";
+	font-size:larger;	
+	background-color:blue;
+}
+
+a:hover
+{
+	font-family:"Courier New";
+	font-size:x-large;
+	background-color:red;
+}
+
+a:link
+{
+	font-family:"Courier New";
+	font-size:xx-large;
+	background-color:yellow;
+}
+
+/*
+第一个字母
+ */
+p:first-letter
+{
+	background-color:yellow;
+}
+
+/*
+第一行
+ */
+p:first-line
+{
+	font-family:"Courier New";
+	font-size:50px;
+}
+
+.test h6 
+{
+    background-color: #567;
+}
+
+/*
+只作用所有子节点，不作用孙子节点和其他节点
+*/
+.test1 > h6 
+{
+    background-color: yellow;
+}
+
+/*
+只作用其后的兄弟节点，只匹配一个
+*/
+.test2 + div 
+{
+	background-color: #567;
+}
+
+/*
+作用其后的所有兄弟节点
+*/
+.test3 ~ div 
+{
+	background-color: #567;
+}
+
+/*
+属性的值是"post1"或者以"post1"开始并立即跟上一个"-"字符，也就是"post1-"，比如class="post1"或class="post1-hello"
+*/
+div[class|="post1"] 
+{
+background-color: #333;
+}
+
+/*
+属性的值是"post2"或者是一系列用空格隔开的值"post2 featured home"，比如class="post2"或class="post2 featured home"，而且这些值中的一个必须是指定的值"post2"
+*/
+div[class~="post2"] 
+{
+background-color: #333;
+}
+
+p#idSelect1
+{
+	background-color:red;
+}
+
+p #idSelect2
+{
+	background-color:red;
+}
